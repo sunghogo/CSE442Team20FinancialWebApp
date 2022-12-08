@@ -1,0 +1,53 @@
+CREATE TABLE investors(
+    id int,
+    username varchar(50),
+    password varchar(50),
+    email varchar(100),
+    mobile varchar(50),
+    details text
+);
+
+CREATE TABLE investment&user(
+    id int,
+    username_id int,
+    investment_name var(100),
+    description text,
+    budget_plan decimal(12,2),
+    budget_estimate decimal(12, 2),
+    budget_actual decimal(12, 2),
+    budget_paid decimal(12, 2),
+    budget_plan decimal(12, 2),
+    investment_outcome_id int
+);
+
+CREATE TABLE investment_status_history(
+    id int,
+    investment_id int,
+    investment_outcome_id int,
+    details text,
+    ts timestamp
+);
+
+CREATE TABLE financial_consultants(
+    id int,
+    username varchar(50),
+    password varchar(50),
+    email varchar(100),
+    mobile varchar(50),
+    details text
+);
+
+
+CREATE TABLE investment_status_history(
+    id int,
+    investment_id int,
+    skill_id int,
+);
+
+
+CREATE TABLE consultant&investment(
+    id int,
+    skill_name varchar(50)
+);
+
+//#root password is help@!
