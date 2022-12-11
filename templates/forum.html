@@ -13,7 +13,7 @@
         console.log(threads);
         var container = document.querySelector('ol');
         for (let thread of threads) {
-            var html = `
+            var html = 
             <li class="row">
                 <a href="/thread.html?${thread.id}">
                     <h4 class="title">
@@ -29,7 +29,7 @@
                     </div>
                 </a>
             </li>
-            `
+            
             container.insertAdjacentHTML('beforeend', html);
         }
     </script>

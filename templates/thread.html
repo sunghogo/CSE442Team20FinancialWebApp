@@ -17,7 +17,7 @@
         var id = window.location.search.slice(1);
         var thread = threads.find(t => t.id == id);
         var header = document.querySelector('.header');
-        var headerHtml = `
+        var headerHtml = 
             <h4 class="title">
                 ${thread.title}
             </h4>
@@ -29,11 +29,11 @@
                     ${thread.comments.length} comments
                 </p>
             </div>
-        `
+        
         header.insertAdjacentHTML('beforeend', headerHtml)
 
         function addComment(comment) {
-            var commentHtml = `
+            var commentHtml = 
                 <div class="comment">
                     <div class="top-comment">
                         <p class="user">
@@ -47,7 +47,7 @@
                         ${comment.content}
                     </div>
                 </div>
-            `
+            
             comments.insertAdjacentHTML('beforeend', commentHtml);
         }
 
